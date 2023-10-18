@@ -1,4 +1,3 @@
-// Check whether a number is positive or negative
 #include<stdio.h>
 void main()
 {
@@ -15,3 +14,4 @@ void main()
         printf("\nNumber is negative.");
     }
 }
+
