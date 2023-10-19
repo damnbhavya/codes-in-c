@@ -1,5 +1,5 @@
-//displaying the division on the basis of result
-#include<stdio.h>
+// displaying the division on the basis of result
+#include <stdio.h>
 void main()
 {
     int a;

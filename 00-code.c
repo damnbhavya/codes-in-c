@@ -32,9 +32,9 @@
 //     int i=0, n, arr[20];
 //     printf("Enter the elements: ");
 //     scanf("%d", &n);
-    
+
 //     for(i=0; i<n; i++)
-//     {   
+//     {
 //         arr[i]=i+1;
 //         // printf("\n arr[%d]= ",i);
 //         // scanf("%d", arr[i]);

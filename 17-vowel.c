@@ -6,16 +6,16 @@ void main()
     printf("Enter a alphabet: ");
     scanf(" %c", &ch);
     ch = tolower(ch);
-    switch(ch)
+    switch (ch)
     {
-        case 'a':
-        case 'e':
-        case 'i':
-        case 'o':
-        case 'u':
+    case 'a':
+    case 'e':
+    case 'i':
+    case 'o':
+    case 'u':
         printf("%c is a vowel", ch);
         break;
-        default:
+    default:
         printf("%c is a consonent", ch);
     }
 }
