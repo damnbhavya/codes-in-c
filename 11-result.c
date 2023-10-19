@@ -5,16 +5,20 @@ void main()
     int a;
     printf("Enter your percentage: ");
     scanf("%d", &a);
-    if (a > 75){
+    if (a > 75)
+    {
         printf("You are in first divison.");
     }
-    else if (a > 65){
+    else if (a > 65)
+    {
         printf("You are in second division.");
     }
-    else if (a > 50){
+    else if (a > 50)
+    {
         printf("You are in third division.");
     }
-    else{
+    else
+    {
         printf("You failed.");
     }
 }

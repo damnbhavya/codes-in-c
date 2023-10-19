@@ -26,23 +26,23 @@
 //     return 0;
 // }
 
-#include<stdio.h>
-int main()
-{
-    int i=0, n, arr[20];
-    printf("Enter the elements: ");
-    scanf("%d", &n);
+// #include<stdio.h>
+// int main()
+// {
+//     int i=0, n, arr[20];
+//     printf("Enter the elements: ");
+//     scanf("%d", &n);
     
-    for(i=0; i<n; i++)
-    {   
-        arr[i]=i+1;
-        // printf("\n arr[%d]= ",i);
-        // scanf("%d", arr[i]);
-    }
-    printf("\nThe array elements are\n");
-    for(i=0; i<n; i++)
-    {
-        printf("arr[%d] = %d\n", i, arr[i]);
-    }
-    return 0;
-}
+//     for(i=0; i<n; i++)
+//     {   
+//         arr[i]=i+1;
+//         // printf("\n arr[%d]= ",i);
+//         // scanf("%d", arr[i]);
+//     }
+//     printf("\nThe array elements are\n");
+//     for(i=0; i<n; i++)
+//     {
+//         printf("arr[%d] = %d\n", i, arr[i]);
+//     }
+//     return 0;
+// }

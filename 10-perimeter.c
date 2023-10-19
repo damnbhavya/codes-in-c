@@ -8,4 +8,4 @@ void main()
     scanf("%d %d", &a, &b);
     c = 2*(a+b);
     printf("The perimeter of the rectangle is %f", c);
-                
+}
