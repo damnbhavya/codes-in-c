@@ -46,3 +46,20 @@
 //     }
 //     return 0;
 // }
+
+// #include<stdio.h>
+// void main()
+// {
+//     int n,i=0,sum=0,n2;
+//     printf("Enter size of array:" );
+//     scanf("%d", &n);
+//     int a[n];
+//     for(i=0; i<n; i++)
+//     {
+//         printf("%d. Enter values of the array: ", i+1);
+//         scanf("%d",&n2);
+//         a[i]=n2;
+//         sum = sum + a[i];
+//     }
+//     printf("Sum of elements in the array is: %d", sum);
+// }
