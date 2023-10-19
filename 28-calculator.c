@@ -25,4 +25,3 @@ void main()
             printf("Invalid input!");
     }
 }
-
