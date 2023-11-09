@@ -11,4 +11,5 @@ void main()
         n = n / 10;
     }
     printf("Sum of digits %d", sum);
+    
 }

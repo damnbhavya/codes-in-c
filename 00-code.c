@@ -63,3 +63,18 @@
 //     }
 //     printf("Sum of elements in the array is: %d", sum);
 // }
+
+#include<stdio.h>
+int main()
+{
+    int a=5;
+    int *ptr1 = &a;
+    int b=7;
+    int *ptr2 = &b;
+    
+    int c = *ptr1;
+    *ptr1 = *ptr2;
+    *ptr2 = c;
+    printf("After swapping a = %d and b = %d", *ptr1, *ptr2);
+    return 0;
+}

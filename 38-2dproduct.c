@@ -59,7 +59,7 @@ int main()
     scanf("%d %d", &r2, &c2);
 
     while(c1 != r2)
-    {
+    {   
         printf("Invalid Input! Enter rows and column again.\n");
         printf("Enter rows and column of first matirx: ");
         scanf("%d %d", &r1, &c1);

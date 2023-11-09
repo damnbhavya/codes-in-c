@@ -1,6 +1,5 @@
 // calculating area and circumference of the circle
 #include <stdio.h>
-#include <conio.h>
 void main()
 {
     float r, c, a;
@@ -13,5 +12,4 @@ void main()
     // a = 3.14*r*r
     printf("\nCircumference of the circle having radius %f is %f", r, c);
     printf("\nArea of the circle having radius %f is %f", r, a);
-    getch();
 }
