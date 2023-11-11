@@ -49,7 +49,6 @@ void compare()
     else
     printf("String %s and %s are not equal\n", a,b);
 }
-
 int main()
 {
     int ch;

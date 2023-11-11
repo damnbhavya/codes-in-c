@@ -28,7 +28,7 @@ int main()
 {
 	int ch;
 	printf("Main Menu ->\n");
-	printf("1. Fibonacci series\n");
+	printf("1. Print the Fibonacci series\n");
 	printf("2. Factorial of a number\n");
 	printf("Enter the action: \n");
 	scanf("%d",&ch);
