@@ -12,4 +12,3 @@ void main()
     }
     printf("Reversed number: %d", reverse);
 }
-
