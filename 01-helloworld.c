@@ -1,6 +1,6 @@
-// program to print hello world
-#include <stdio.h>
+// WAP to print hello world
+#include<stdio.h>
 void main()
 {
-    print("hello world");
+    printf("hello world");
 }

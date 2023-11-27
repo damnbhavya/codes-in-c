@@ -1,13 +1,14 @@
-#include <stdio.h>
+//WAP to print fibonacci series upto n
+#include<stdio.h>
 void main()
 {
-    int n, nx, f = 0, s = 1;
+    int n,nx,f=0,s=1;
     printf("Enter the number of terms: ");
     scanf("%d", &n);
-    printf("Fbionacchi Series: %d %d ", f, s);
-    for (int i = 2; i < n; i++)
+    printf("Fibonacci Series: %d %d ", f,s);
+    for (int i=2; i<n; i++)
     {
-        nx = f + s;
+        nx = f+s;
         printf("%d ", nx);
         f = s;
         s = nx;
