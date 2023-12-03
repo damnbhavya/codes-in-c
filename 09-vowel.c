@@ -1,4 +1,4 @@
-//WAP to check whether a number is vowel or not
+//WAP to check whether a alphabet is vowel or not
 #include<stdio.h>
 #include<ctype.h>
 void main()
