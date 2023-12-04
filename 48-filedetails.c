@@ -42,4 +42,3 @@ int main()
     printf("No of floats: %d\n",fcount);
     return 0;
 }
-

@@ -5,7 +5,6 @@ void main()
     int mat[10][10],r,c,i,j;
     printf("Enter rows and column of the matrix: ");
     scanf("%d %d", &r, &c);
-
     printf("Enter elements: \n");
     for(i=0; i<r; i++)
     {

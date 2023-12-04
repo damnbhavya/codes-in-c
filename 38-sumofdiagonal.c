@@ -5,7 +5,6 @@ void main()
     int mat[10][10],s,i,j,sum=0;
     printf("Enter order of the square matirx: ");
     scanf("%d", &s);
-
     printf("Enter elements: \n");
     for(i=0; i<s; i++)
     {

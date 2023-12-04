@@ -22,6 +22,5 @@ void main()
             sum += mat[i][j];
         }
     }
-
     printf("Sum of elements of the matrix is %d", sum);
 }

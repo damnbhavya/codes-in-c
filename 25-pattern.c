@@ -1,7 +1,7 @@
 //WAP to print this pattern
-//       1 
-//     1 2 1 
-//   1 2 3 2 1 
+//       1
+//     1 2 1
+//   1 2 3 2 1
 // 1 2 3 4 3 2 1
 #include<stdio.h>
 void main()
