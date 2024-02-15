@@ -1,44 +1,35 @@
-//WAP to check the number of characters, floating, integers in a file
+//WAP to check the number of characters, letter, integers, space in a file
 #include<stdio.h>
 #include<ctype.h>
 int main()
 {
     FILE *pointer;
     char filename[50];
-    char ch;
-    printf("Enter filename: ");
+    printf("\n Enter filename: ");
     scanf("%s", filename);
-    pointer = fopen(filename,"r");
-    if(pointer==NULL)
+    pointer = fopen(filename, "r");
+    if(pointer == NULL)
     {
-        printf("File not found!");
+        printf("Can't open the file %s.\n",filename);
         return 1;
     }
-    int ccount=0, icount=0, fcount=0;
-    int number=0;
-    while((ch=fgetc(pointer))!=EOF)
-    {
-        if(isalpha(ch)||ispunct(ch)||isspace(ch))
-        {
-            if(number)
-            {
-                fcount ++;
-            }
+    int ccount=0,lcount=0,icount=0,scount=0;
+    char ch;
+    while((ch=fgetc(pointer))!=EOF){
+        if(isalpha(ch)){
+            lcount++;
         }
-        else if (isdigit(ch))
-        {
-            number=1;
+        else if(isdigit(ch)){
+            icount++;
+        }
+        else if(isspace(ch)){
+            scount++;
         }
         ccount++;
     }
-    if(number)
-    {
-        fcount++;
-    }
+    printf("Number of characters : %d\n",ccount);
+    printf("Number of letters : %d\n",lcount);
+    printf("Number of integers : %d\n",icount);
+    printf("Number of spaces : %d\n",scount);
     fclose(pointer);
-    printf("Analysis of file %s:\n", filename);
-    printf("No of character: %d\n",ccount);
-    printf("No of integers: %d\n",icount);
-    printf("No of floats: %d\n",fcount);
-    return 0;
 }

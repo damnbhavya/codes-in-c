@@ -6,7 +6,7 @@ int ackermann(int m, int n)
     {
         return n+1;
     }
-    else if(n==0)
+    else if(m>0 && n==0)
     {
         return ackermann(m-1,1);
     }
@@ -17,6 +17,9 @@ int ackermann(int m, int n)
 }
 void main()
 {
-    int m=2, n=1;
-    printf("Result: %d", ackermann(m,n));
+    int m, n,sol;
+    printf("Enter m&n: ");
+    scanf("%d %d", &m, &n);
+    sol = ackermann(m,n);
+    printf("%d", sol);
 }
