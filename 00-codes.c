@@ -330,7 +330,7 @@
 
 
 
-// // MAXIMUM HOUR GLASS
+// // WAP TO DISPLAY LARGEST SUM OF HOUR GLASS IN A MATRIX
 // #include<stdio.h>
 // #include<stdlib.h>
 // int main()
