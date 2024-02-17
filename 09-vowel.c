@@ -7,8 +7,7 @@ void main()
     printf("Enter a alphabet: ");
     scanf(" %c", &ch);
     ch = tolower(ch);
-    switch (ch)
-    {
+    switch (ch){
         case 'a':
         case 'e':
         case 'i':

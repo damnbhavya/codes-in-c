@@ -8,8 +8,7 @@ int main()
     printf("\n Enter filename: ");
     scanf("%s", filename);
     pointer = fopen(filename, "r");
-    if(pointer == NULL)
-    {
+    if(pointer == NULL){
         printf("Can't open the file %s.\n",filename);
         return 1;
     }

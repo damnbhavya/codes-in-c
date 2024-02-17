@@ -6,20 +6,15 @@ void main()
     printf("Enter order of the square matirx: ");
     scanf("%d", &s);
     printf("Enter elements: \n");
-    for(i=0; i<s; i++)
-    {
-        for(j=0; j<s; j++)
-        {
+    for(i=0; i<s; i++){
+        for(j=0; j<s; j++){
             printf("Enter a%d%d: ", i+1,j+1);
             scanf("%d", &mat[i][j]);
         }
     }
-    for(i=0; i<s; i++)
-    {
-        for(j=0; j<s; j++)
-        {
-            if(i==j)
-            {
+    for(i=0; i<s; i++){
+        for(j=0; j<s; j++){
+            if(i==j){
                 sum += mat[i][j];
             }
         }

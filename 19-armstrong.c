@@ -7,24 +7,20 @@ void main()
     printf("Enter a number: ");
     scanf("%d", &n);
     t=n;
-    while(n>0)
-    {
-        c += 1;
-        n = n/10;
+    while(n>0){
+        c+=1;
+        n=n/10;
     }
     n=t;
-    while(n>0)
-    {
-        r = n%10;
-        s = s+(pow(r,c));
-        n = n/10;
+    while(n>0){
+        r=n%10;
+        s=s+(pow(r,c));
+        n=n/10;
     }
-    if (s==t)
-    {
+    if (s==t){
         printf("Armstrong number");
     }
-    else
-    {
+    else{
         printf("Not an armstrong number");
     }
 }

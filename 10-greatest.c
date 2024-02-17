@@ -1,5 +1,5 @@
 //WAP to find greatest of three no's without AND operator
-#include <stdio.h>
+#include<stdio.h>
 void main()
 {
     int a,b,c;

@@ -8,12 +8,11 @@ void main()
     scanf("%d", &a);
     printf("Enter number 2: ");
     scanf("%d", &b);
-    if (b==0)
-    {
+    if (b==0){
         printf("Number cannot be divided by zero\n");
     }
-    q = a/b;
-    r = a%b;
+    q=a/b;
+    r=a%b;
     printf("Quotient: %.2f\n", q);
     printf("Remainder: %.2f", r);
 }

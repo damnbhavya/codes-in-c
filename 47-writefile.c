@@ -8,8 +8,7 @@ int main()
     printf("Enter the filename: ");
     scanf("%s",filename);
     pointer = fopen(filename,"w");
-    if (pointer==NULL)
-    {
+    if (pointer==NULL){
         printf("File not found!");
         return 1;
     }

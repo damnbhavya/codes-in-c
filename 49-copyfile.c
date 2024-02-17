@@ -12,8 +12,7 @@ int main()
         printf("Error opening the files.\n");
         return 1;
     }
-    while((ch=fgetc(fp1))!=EOF)
-    {
+    while((ch=fgetc(fp1))!=EOF){
         fputc(ch,fp2);
     }
     fclose(fp1);

@@ -8,8 +8,7 @@ void main()
     scanf("%d %d", &a, &b);
     printf("Enter the operator (+,-,*,/): ");
     scanf(" %c", &c);
-    switch (c)
-    {
+    switch (c){
     case '+':
         printf("%d+%d = %d", a,b,a+b);
         break;

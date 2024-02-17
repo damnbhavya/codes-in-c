@@ -9,6 +9,6 @@ void main()
     scanf("%f", &r);
     printf("Enter the time duration: ");
     scanf("%f", &t);
-    si = (p*r*t)/100;
+    si=(p*r*t)/100;
     printf("Simple interest: %f", si);
 }

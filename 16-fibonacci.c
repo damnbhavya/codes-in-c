@@ -6,11 +6,10 @@ void main()
     printf("Enter the number of terms: ");
     scanf("%d", &n);
     printf("Fibonacci Series: %d %d ", f,s);
-    for (int i=2; i<n; i++)
-    {
-        nx = f+s;
+    for (int i=2; i<n; i++){
+        nx=f+s;
         printf("%d ", nx);
-        f = s;
-        s = nx;
+        f=s;
+        s=nx;
     }
 }

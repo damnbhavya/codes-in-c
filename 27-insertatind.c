@@ -2,35 +2,26 @@
 #include<stdio.h>
 void main()
 {
-    int a[50],n,i,j,ind,temp,val,temp2;
-    printf("Enter the length of array: ");
-    scanf("%d", &n);
-    for(i=0; i<n; i++)
-    {
-        printf("Enter elements: ");
+    int a[50],s,i,ind,val;
+    printf("Enter the size of array: ");
+    scanf("%d", &s);
+    for(i=0; i<s; i++){
+        printf("Enter element %d: ",i);
         scanf("%d", &a[i]);
     }
     printf("Elements of array:\n");
-    for(i=0; i<n; i++)
-    {
+    for(i=0; i<s; i++){
         printf("a[%d] = %d\n", i,a[i]);
     }
     printf("Enter the index: ");
     scanf("%d", &ind);
     printf("Enter the value: ");
     scanf("%d", &val);
-    temp = a[ind];
-    temp2 = a[ind+1];
-    a[ind] = val;
-
-    for(i=ind+1; i<n+1; i++)
-    {
-        a[i] = temp;
-        temp = temp2;
-        temp2 = a[i+1];
+    for(i=s; i>ind; i--){
+        a[i]=a[i-1];
     }
-    for(i=0; i<n+1; i++)
-    {
+    a[ind]=val;
+    for(i=0; i<s+1; i++){
         printf("%d ",a[i]);
     }
 }
