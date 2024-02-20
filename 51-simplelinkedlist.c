@@ -1,12 +1,41 @@
 #include<stdio.h>
 #include<conio.h>
 #include<stdlib.h>
-
-struct node{
+struct node
+{
     int info;
     struct node *link;          
 };
 struct node* first;
+void create()
+{
+    struct node *ptr,*cpt;
+    char ch;
+    ptr=(struct node*)malloc(sizeof(struct node));
+    printf("Enter info:");
+    scanf("%d",&ptr->info);
+    ptr->link=NULL;
+    first=ptr;
+    do{
+    
+    cpt= (struct node*)malloc(sizeof(struct node));
+    printf("Enter info:");
+    scanf("%d",&cpt->info);
+
+    ptr->link=cpt;
+    ptr=cpt;
+
+    printf("Do you want to create more Nodes? Press 'Y' for yes and 'N' for no:");
+    fflush(stdin);
+    scanf("%c",&ch);
+
+
+    }while(ch=='y');
+
+    ptr->link=NULL;
+
+
+}
 
 
 void create();
@@ -74,42 +103,6 @@ void main(){
 
 }
 
-//Creation of a Single Linked List
-void create(){
-    struct node *ptr,*cpt;
-    char ch;
-
-    ptr=(struct node*)malloc(sizeof(struct node));
-
-    printf("Enter info:");
-    scanf("%d",&ptr->info);
-    ptr->link=NULL;
-    first=ptr;
-
-    // printf("Do you want to create more Nodes? Press 'Y' for yes and 'N' for no:");
-    // char ch;
-    // scanf("%d",&ch);
-
-    do{
-    
-    cpt= (struct node*)malloc(sizeof(struct node));
-    printf("Enter info:");
-    scanf("%d",&cpt->info);
-
-    ptr->link=cpt;
-    ptr=cpt;
-
-    printf("Do you want to create more Nodes? Press 'Y' for yes and 'N' for no:");
-    fflush(stdin);
-    scanf("%c",&ch);
-
-
-    }while(ch=='y');
-
-    ptr->link=NULL;
-
-
-}
 
 //Display Function for the created linked list
 void display(){
