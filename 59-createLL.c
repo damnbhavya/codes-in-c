@@ -5,17 +5,15 @@ struct node{
 };
 void main()
 {
-    struct node a,b,c,d;
+    struct node a,b,c;
     a.info=10;
     b.info=20;
     c.info=30;
-    d.info=40;
     struct node *st;
     st=&a;
     a.nxt=&b;
     b.nxt=&c;
-    c.nxt=&d;
-    d.nxt=NULL;
+    c.nxt=NULL;
     struct node *ptr;
     ptr=st;
     while(ptr!=NULL){

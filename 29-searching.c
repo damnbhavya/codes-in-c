@@ -20,5 +20,8 @@ void main()
             printf("Index %d contains %d", i,a[i]);
             break;
         }
+        else if(i==n-1){
+            printf("Not found.");
+        }
     }
 }

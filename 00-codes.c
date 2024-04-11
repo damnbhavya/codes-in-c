@@ -221,7 +221,7 @@
 //     int *ptr[10];
 //     ptr[0] = arr;
 //     ptr[1] = arr + 1;
-//     printf("%p ", *ptr[0]);
+//     printf("%u ", *ptr[0]);
 //     printf("%d ", *ptr[1]);
 // }
 
@@ -329,3 +329,119 @@
 // }
 
 
+// #include <stdio.h>   
+// int stack[100],i,j,choice=0,n,top=-1;  
+// void push();  
+// void pop();  
+// void show();  
+// void main ()  
+// {  
+      
+//     printf("Enter the number of elements in the stack ");   
+//     scanf("%d",&n);  
+//     printf("*********Stack operations using array*********");  
+  
+// printf("\n----------------------------------------------\n");  
+//     while(choice != 4)  
+//     {  
+//         printf("Chose one from the below options...\n");  
+//         printf("\n1.Push\n2.Pop\n3.Show\n4.Exit");  
+//         printf("\n Enter your choice \n");        
+//         scanf("%d",&choice);  
+//         switch(choice)  
+//         {  
+//             case 1:  
+//             {   
+//                 push();  
+//                 break;  
+//             }  
+//             case 2:  
+//             {  
+//                 pop();  
+//                 break;  
+//             }  
+//             case 3:  
+//             {  
+//                 show();  
+//                 break;  
+//             }  
+//             case 4:   
+//             {  
+//                 printf("Exiting....");  
+//                 break;   
+//             }  
+//             default:  
+//             {  
+//                 printf("Please Enter valid choice ");  
+//             }   
+//         };  
+//     }  
+// }   
+  
+// void push ()  
+// {  
+//     int val;      
+//     if (top == n )   
+//     printf("\n Overflow");   
+//     else   
+//     {  
+//         printf("Enter the value?");  
+//         scanf("%d",&val);         
+//         top = top +1;   
+//         stack[top] = val;   
+//     }   
+// }   
+  
+// void pop ()   
+// {   
+//     if(top == -1)   
+//     printf("Underflow");  
+//     else  
+//     top = top -1;   
+// }   
+// void show()  
+// {  
+//     for (i=top;i>=0;i--)  
+//     {  
+//         printf("%d\n",stack[i]);  
+//     }  
+//     if(top == -1)   
+//     {  
+//         printf("Stack is empty");  
+//     }  
+// }
+
+
+// #include<stdio.h>
+// void main()
+// {
+//     int a[5], n=5;
+//     int f=-1,r=-1;
+//     if(f==r==-1)
+
+// }
+
+// #include<stdio.h>
+// #include<stdlib.h>
+// void main()
+// {
+// int *ptr = (int *)malloc(5 * sizeof(int));
+// if (ptr != NULL) {
+//     *ptr = 10; // Accessing the first element of the "array"
+//     *(ptr+1)= 20; // Accessing the second element
+//     // and so on...
+// }
+// printf("%d",*ptr);
+// printf("%d",*(ptr+1));
+// }
+
+// #include<stdio.h>
+// int add(int *p1, int *p2)
+// {
+//     return *p1+*p2;
+// }
+// void main()
+// {
+//     int n1=10, n2=20;
+//     printf("%d",add(&n1,&n2));
+// }
