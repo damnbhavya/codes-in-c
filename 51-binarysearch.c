@@ -57,7 +57,7 @@ int binary(int a[], int beg, int end, int item)
         }
         return -1;
     }
-} 
+}
 void main()
 {
     int ub,item,lb=0;

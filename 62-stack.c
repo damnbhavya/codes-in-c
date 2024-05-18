@@ -22,15 +22,17 @@ void pop()
         top--;
     }
 }
-void show()
+int show()
 {
+    if(top==-1){
+        printf("Stack is empty.");
+        return 0;
+    }
     printf("%d<--TOP\n",a[top]);
     for(int i=top-1;i>=0;i--){
         printf("%d\n",a[i]);
     }
-    if(top==-1){
-        printf("Stack is empty.");
-    }
+
 }
 void main()
 {

@@ -1,50 +1,40 @@
+//WAP to perform quick sort
 #include<stdio.h>
-#include<stdlib.h>
-int quick(int a[], int beg, int end)
-{
-    int left, right, temp, loc, flag;
-    loc = left+beg;
-    right=end;
-    flag=0;
-    while(flag!=1){
-        while((a[loc]<=a[right]) && (loc!=right)){
-            right--;
-            if(loc==right){
-                flag=1;
-            }
-            else if(a[loc]>a[right]){
-                temp=a[loc];
-                a[loc]=a[right];
-                a[right]=temp;
-                loc=right;
-            }
-            if(flag!=1){
-                while((a[loc]>=a[left]) && (loc!=left))
-                left++;
-                if(loc=left)
-                flag=1;
-                else if(a[loc]<a[left]){
-                    temp = a[loc];
-                    a[loc]=a[left];
-                    a[left]=temp;
-                    loc=left;
-                }
-            }
-        }
-    }
-    return loc;
+void swap(int *a, int *b){
+	int temp = *a;
+	*a = *b;
+	*b = temp;
 }
-void Quicksort(int a[],int lb, int ub)
-{
-    int mid;
-    if(lb>ub){
-        mid=Quick(a,lb,ub);
-        Quicksort(a,lb,mid-1);
-        Quicksort(a,mid+1,ub);
-    }
+int partition(int arr[], int low, int high){
+	int pivot = arr[high];
+	int i = low-1;
+	for(int j=low;j<=high-1;j++){
+		if(arr[j]<pivot){
+			i++;
+			swap(&arr[i],&arr[j]);
+		}
+	}
+	swap(&arr[i+1],&arr[high]);
+	return i+1;
 }
-void main()
-{
-    int a[1000],n,i;
-    printf("En");
+void quicksort(int arr[], int low, int high){
+	if(low<high){
+		int pi = partition(arr,low,high);
+		quicksort(arr,low,pi-1);
+		quicksort(arr,pi+1,high);
+	}
+}
+void printArray(int arr[], int size){
+	for(int i=0;i<size;i++){
+		printf("%d ",arr[i]);
+	}
+	printf("\n");
+}
+int main(){
+	int arr[] = {10, 7, 8, 9, 1, 5};
+	int n = sizeof(arr)/sizeof(arr[0]);
+	quicksort(arr,0,n-1);
+	printf("Sorted array: \n");
+	printArray(arr,n);
+	return 0;
 }
